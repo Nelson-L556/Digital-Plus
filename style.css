@@ -1,9 +1,14 @@
-/* Variables */
+/** Generales */
     :root{
         --fuente-texto: "Nunito";
         --fuente-titulo: "Signika Negative";
-        --bg-primario: #ffd100;
-        --bg-secundario: #0a0908;
+        --bg-primario: #00A8E8;
+        --bg-primario-hover: #005F99;
+        --bg-secundario: #3D3D3D;
+        --bg-secundario-2: #FF5722;
+        --blanco: #fff;
+        --negro: #000;
+        --bg-exito: #4CAF50;
     }
 
 html{
@@ -20,6 +25,24 @@ body{
     font-family: var(--fuente-texto);
 }
 
+h1, h2, h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+
+
 /* Header */
 
 .contenedor{
@@ -34,14 +57,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffd100;
+    background-color: var(--bg-primario);
 }
 
 @media (min-width: 768px) {
     .navegacion__header{
         align-items: center;
         justify-content: space-around;
-        background-color: #ffd100;
+        background-color: var(--bg-primario);
     }
 }
 
@@ -70,6 +93,14 @@ body{
     padding: .5rem;
     position: relative;
     border: none;
+    width: 105%;
+}
+
+
+@media (max-width: 320px) {
+    .navegacion__busqueda{
+        width: 43%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -86,7 +117,7 @@ body{
     position: absolute;
     left: 81%;
     top: 4.1rem;
-    background-color: #ffd100;
+    background-color: var(--bg-primario);
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -123,15 +154,16 @@ body{
 
 .busqueda:hover{
     transform: scale(1.2);
-    background-color: #f48c06;
+    background-color: var(--bg-primario-hover);
 }
 
 .login{
     text-decoration: none;
-    color: #000;
+    color: var(--blanco);
     font-size: 1.8rem;
     transition: all .3s;
     position: relative;
+    font-weight: 600;
 }
 
 .login::after{
@@ -145,9 +177,60 @@ body{
     bottom: 0;
     transition: all .3s;
     z-index: -1;
+    background-color: var(--blanco);
 }
 
 .login:hover::after{
     width: 100%;
     z-index: 1;
+}
+
+/** Header  */
+
+.header__flex{
+    position: relative;
+}
+
+.img{
+    width: 100%;
+}
+
+.header__contenedor{
+    width: 100%;
+    max-width: 130rem;
+    margin: 0 auto;
+    background-color: var(--bg-secundario);
+}
+
+@media (min-width: 768px) {
+    .header__contenedor{
+        width: 100%;
+    }
+}
+
+.header__titulo{
+    font-family: var(--fuente-titulo);
+    color: var(--blanco);
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding: 1.5rem 1rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header__titulo{
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        backdrop-filter: blur(1rem);
+    }
+}
+
+
+/** Servicios  */
+.bento__contenedor{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
 }
