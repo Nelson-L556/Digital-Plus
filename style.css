@@ -1,0 +1,153 @@
+/* Variables */
+    :root{
+        --fuente-texto: "Nunito";
+        --fuente-titulo: "Signika Negative";
+        --bg-primario: #ffd100;
+        --bg-secundario: #0a0908;
+    }
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuente-texto);
+}
+
+/* Header */
+
+.contenedor{
+    width: 90%;
+    max-width: 120rem;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.navegacion__header{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffd100;
+}
+
+@media (min-width: 768px) {
+    .navegacion__header{
+        align-items: center;
+        justify-content: space-around;
+        background-color: #ffd100;
+    }
+}
+
+.navegacion__login{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navegacion__login{
+        display: block;
+    }
+}
+
+
+.navegacion__imagen{
+    height: 100%;
+}
+
+.navegacion__img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.navegacion__search{
+    border-radius: 2rem;
+    padding: .5rem;
+    position: relative;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .navegacion__busqueda{
+        width: 60%;
+    }
+
+    .navegacion__search{
+        width: 100%;
+    }
+}
+
+.busqueda{
+    position: absolute;
+    left: 81%;
+    top: 4.1rem;
+    background-color: #ffd100;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+@media (min-width: 768px) {
+    .busqueda{
+        position: absolute;
+        left: 75%;
+        top: 3.9rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .busqueda{
+        position: absolute;
+        left: 75%;
+        top: 3.9rem;
+    }
+}
+
+@media (min-width: 1840px) {
+    .busqueda{
+        position: absolute;
+        left: 75%;
+        top: 3.9rem;
+    }
+}
+
+.busqueda:hover{
+    transform: scale(1.2);
+    background-color: #f48c06;
+}
+
+.login{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    transition: all .3s;
+    position: relative;
+}
+
+.login::after{
+    content: "";
+    width: 0;
+    height: .2rem;
+    display: block;
+    background-color: var(--bg-secundario);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+
+.login:hover::after{
+    width: 100%;
+    z-index: 1;
+}
