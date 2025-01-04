@@ -5,11 +5,11 @@
         --bg-primario: #fdca40;
         --bg-primario-hover: #d4aa37;
         --bg-secundario: #273043;
-        --bg-secundario-2: #FF5722;
         --bg-fondo: #52b788;
         --blanco: #fff;
         --negro: #000;
-        --bg-exito: #4CAF50;
+        --btn-color: #52b788;
+        --btn-hover: #4CAF50;
     }
 
 html{
@@ -258,7 +258,7 @@ a {
 
 .bento__card{
     width: 30rem;
-    background-color: var(--bg-exito);
+    background-color: var(--bg-fondo);
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
@@ -343,4 +343,44 @@ a {
 .bento__parrafo{
     text-align: center;
     margin: 0;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.bento__texto{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bento__badge{
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: var(--btn-color);
+    transition: all .3s;
+}
+
+.bento__badge:hover{
+    background-color: #40906a;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.bento__btn{
+    padding: 1rem;
+    text-align: center;
+    background-color: #5a189a;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    color: var(--blanco);
+    transition: all .3s;
+}
+
+
+.bento__btn:hover{
+    background-color: #270b44;
+    transform: scale(1.1);
 }
