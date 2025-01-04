@@ -2,10 +2,11 @@
     :root{
         --fuente-texto: "Nunito";
         --fuente-titulo: "Signika Negative";
-        --bg-primario: #00A8E8;
-        --bg-primario-hover: #005F99;
-        --bg-secundario: #3D3D3D;
+        --bg-primario: #fdca40;
+        --bg-primario-hover: #d4aa37;
+        --bg-secundario: #273043;
         --bg-secundario-2: #FF5722;
+        --bg-fondo: #52b788;
         --blanco: #fff;
         --negro: #000;
         --bg-exito: #4CAF50;
@@ -41,7 +42,6 @@ h3 {
 a {
     text-decoration: none;
 }
-
 
 /* Header */
 
@@ -159,7 +159,7 @@ a {
 
 .login{
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--negro);
     font-size: 1.8rem;
     transition: all .3s;
     position: relative;
@@ -177,7 +177,7 @@ a {
     bottom: 0;
     transition: all .3s;
     z-index: -1;
-    background-color: var(--blanco);
+    background-color: var(--negro);
 }
 
 .login:hover::after{
@@ -230,7 +230,117 @@ a {
 
 /** Servicios  */
 .bento__contenedor{
+    background-color: var(--bg-secundario);
+}
+
+.bento__productos{
     width: 90%;
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.bento__informacion{
+    color: #fff;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bento__grid{
+
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    place-items: center;
+}
+
+
+.bento__card{
+    width: 30rem;
+    background-color: var(--bg-exito);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bento__grid > div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para incluir padding y border en el tamaño total */
+}
+
+
+@media (min-width: 980px) {
+    .bento__grid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "ecommerse blog blog tecnico"
+        "automatizacion automatizacion desarrollo desarrollo"
+        "capacitacion mantenimiento mantenimiento consultoria";
+    }
+
+    .ecommerse{
+        grid-area: ecommerse;
+    }
+
+    .blog{
+        grid-area: blog;
+    }
+
+    .tecnico{
+        grid-area: tecnico;
+    }
+
+    .automatizacion{
+        grid-area: automatizacion;
+    }
+
+    .desarrollo{
+        grid-area: desarrollo;
+    }
+
+    .capacitacion{
+        grid-area: capacitacion;
+    }
+
+    .mantenimiento{
+        grid-area: mantenimiento;
+    }
+
+    .consultoria{
+        grid-area: consultoria;
+    }
+
+    .bento__grid > section {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-fondo); /* Color de fondo para visualizar */
+        border-radius: 1rem; /* Opcional: bordes redondeados */
+        gap: 2rem;
+    }
+}
+
+.bento__img{
+    width: 10rem;
+}
+
+.img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.bento__parrafo{
+    text-align: center;
+    margin: 0;
 }
