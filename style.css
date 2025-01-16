@@ -46,6 +46,9 @@ a{
 }
 
 /** NAV  */
+.no-scroll {
+    overflow: hidden;
+}
 
 .navegacion{
     width: 100%;
@@ -81,7 +84,8 @@ a{
     }
 }
 
-.icono__cerrar{
+.icono__cerrar,
+.icono__cerrar-menu{
     cursor: pointer;
     width: 3rem;
     height: 3rem;
@@ -98,7 +102,8 @@ a{
     transform: scale(1.3);
 }
 
-.icono__cerrar:hover{
+.icono__cerrar:hover,
+.icono__cerrar-menu:hover{
     transform: scale(1.3);
 }
 
@@ -148,14 +153,6 @@ a{
     }
 }
 
-.visible{
-    display: flex;
-}
-
-.oculto{
-    display: none;
-}
-
 .f-start{
     display: flex;
     align-items: flex-start;
@@ -166,18 +163,23 @@ a{
 }
 
 .navegacion__enlaces{
-    height: 5rem;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
+    flex-direction: column;
     display: none;
-    margin-top: 1rem;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
 @media (min-width: 768px) {
     .navegacion__enlaces{
+        height: 5rem;
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -226,6 +228,56 @@ a{
     }
 }
 
+.navegacion__redes{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .enlaces{
+        flex-direction: row;
+    }
+}
+
+
+
+.navegacion__imagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oculto{
+    display: none;
+}
+
+.visible{
+    display: flex;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .navegacion__imagen{
+        display: inline;
+        width: 0;
+    }
+}
+
 /** Header  */
 
 .header__titulo{
@@ -270,13 +322,34 @@ a{
     }
 }
 
-
-
 .header__flex{
     display: flex;
     flex-direction: column;
     background-color: var(--bg-secundario);
 }
+
+.navegacion__fondo-menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primario);
+}
+
+.navegacion__menu-responsivo{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .navegacion__menu-responsivo{
+        width: 0;
+    }
+}
+
 
 /** Servicios  */
 .bento__contenedor{

@@ -7,6 +7,14 @@ const menu = document.querySelector(".navegacion");
 const inputBusqueda = document.querySelector(".navegacion__search")
 const iconoBuscar = document.querySelector(".icono__busqueda");
 const busquedabtn = document.querySelector(".navegacion__btn");
+const iconoMenu = document.querySelector(".icono__menu");
+const navegacionEnlaces = document.querySelector(".navegacion__enlaces");
+const iconoCarrito = document.querySelector(".icono__carrito");
+const logo = document.querySelector(".navegacion__imagen");
+const iconoCerrarMenu = document.querySelector(".icono__cerrar-menu");
+const navegacionTitulo = document.querySelector(".navegacion__titulo-menu");
+const redesSociales = document.querySelector(".navegacion__redes");
+
 
 //* Eventos
 iconoBuscar.addEventListener("click", () =>{
@@ -26,6 +34,14 @@ inputBusqueda.addEventListener("input", () => {
 })
 
 
+iconoMenu.addEventListener("click", () => {
+    abrirMenu();
+})
+
+iconoCerrarMenu.addEventListener("click", () => {
+    cerrarMenu();
+})
+
 //* Funciones
 function abrirMenuBusqueda() {
     navegacionBusqueda.classList.add("fondo");
@@ -34,7 +50,7 @@ function abrirMenuBusqueda() {
     fondoSearch.classList.add("visible");
     iconoBuscar.classList.add("oculto")
     navegacionBusqueda.classList.add("f-start")
-    iconoCarrito.classList.add("oculto")
+    document.body.classList.add('no-scroll');
 }
 
 function cerrarMenuBusqueda() {
@@ -44,7 +60,8 @@ function cerrarMenuBusqueda() {
     fondoBusqueda.classList.remove("visible");
     fondoSearch.classList.remove("visible");
     navegacionBusqueda.classList.remove("f-start")
-    iconoCarrito.classList.remove("oculto")
+    document.body.classList.remove('no-scroll');
+
 }
 
 function leerInput(){
@@ -55,4 +72,31 @@ function leerInput(){
 function generarValorBtn() {
     let valorBtn = leerInput();
     busquedabtn.textContent = `Buscar: "${valorBtn}"`;
+}
+
+function abrirMenu() {
+    navegacionBusqueda.classList.add("navegacion__fondo-menu")
+    navegacionEnlaces.classList.add("visible");
+    iconoMenu.classList.add("oculto")
+    document.body.classList.add('no-scroll');
+    iconoBuscar.classList.add("oculto");
+    iconoCarrito.classList.add("oculto");
+    logo.classList.add("oculto")
+    iconoCerrarMenu.classList.remove("oculto");
+    navegacionTitulo.classList.remove("oculto")
+    redesSociales.classList.remove("oculto")
+
+}
+
+function cerrarMenu(){
+    navegacionBusqueda.classList.remove("navegacion__fondo-menu")
+    navegacionEnlaces.classList.remove("visible");
+    iconoMenu.classList.remove("oculto")
+    document.body.classList.remove('no-scroll');
+    iconoBuscar.classList.remove("oculto");
+    iconoCarrito.classList.remove("oculto");
+    logo.classList.remove("oculto")
+    iconoCerrarMenu.classList.add("oculto");
+    navegacionTitulo.classList.add("oculto")
+    redesSociales.classList.add("oculto")
 }
