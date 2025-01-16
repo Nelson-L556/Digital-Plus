@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Plus</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Carrito de compras</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -16,28 +16,51 @@
 </head>
 <body>
     <nav class="navegacion">
-        <div class="navegacion__header">
-            <div class="navegacion__imagen">
-                <img class="navegacion__img" src="img/logo.png" alt="Imagen logo">
+        <div class="navegacion__iconos ">
+            <div class="navegacion__imagen centro">
+                <img class="navegacion__img navegacion__logo-activo" src="img/logo.png" alt="Imagen logo">
             </div>
 
-            <div class="navegacion__busqueda">
-                <input type="search" class="navegacion__search" name="" placeholder="Buscar" id="" >
-
-                <svg class="busqueda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg>
-            </div>
-    
-            <div class="navegacion__login">
+            <div class="navegacion__enlaces">
+                <a href="" class="">Nosotros</a>
+                <a href="" class="">Servicios</a>
+                <a href="" class="">Soporte</a>
+                <a href="" class="">Ecommerse</a>
                 <a class="login" href="#">Iniciar sesión</a>
             </div>
+
+            <div class="navegacion__icono">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icono__menu" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
     
-            <div class="navegacion__shopp">
-                <svg class="navegacion__compra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2M1 2v2h2l3.6 7.59l-1.35 2.45c-.16.28-.25.61-.25.96c0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2"/></svg>
+                <svg class="icono__carrito" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h11q.425 0 .713.288T19 16t-.288.713T18 17H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H2q-.425 0-.712-.288T1 3t.288-.712T2 2h1.625q.275 0 .525.15t.375.425z"/></svg>
+    
+                
+                <svg class="icono__busqueda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg>
+
             </div>
-        </div>
+
+            <div class="navegacion__fondo">
+                <svg class="icono__cerrar oculto" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
+
+                <div class="form">
+                    <h2 class="navegacion__titulo">Buscando</h2>
+                    <div class="navegacion__conjunto"></div>
+                    <input type="serch" class="navegacion__search" placeholder="Introduce una palabra clave" maxlength="20" name="" id="">
+                    <button class="navegacion__btn"></span></button>
+                    
+                </div>
+            </div>
+
+            <div class="navegacion__compras oculto">
+                <svg class="icono__cerrar-compras oculto" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
+                <div class="compras">
+                    <h2 class="navegacion__titulo-compras">Carrito</h2>
+                </div>
+
+            </div>
     </nav>  <!--Fin del menú-->
 
-    <header class="header__contenedor">
+    <header class="contenedor">
         <div class="header__flex">
             <div class="header__imagen">
                 <img src="img/header.webp" class="img" alt="Imagen header">
@@ -47,7 +70,6 @@
                 <h1 class="header__titulo">En Digital Plus encontraras todo lo que necesitas sobre tecnología: componentes de última generación, servicios personalizados y la mejor guía para potenciar tu mundo digital.</h1>
             </div>
         </div>
-
     </header> <!--Fin del header-->
 
     <main class="bento__contenedor">
@@ -137,7 +159,6 @@
             </div> <!-- Fin de div bento__grid-->
         </div>
     </main>
-
     <script src="app.js"></script>
 </body>
 </html>
