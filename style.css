@@ -12,11 +12,14 @@
     --btn-hover: #4CAF50;
     --bg-facebook: #3b5998 ;
     --bg-instagram: #833AB4 ;
+    --bg-fondo-nuetro: #efefef;
+    --bg-fondo-opaco: #2222220d;
 }
 
 html{
 font-size: 62.5%;
 box-sizing: border-box;
+background-color: var(--bg-fondo-nuetro);
 }
 
 *, *::after, *::before{

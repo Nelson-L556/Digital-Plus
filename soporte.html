@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Plus</title>
+    <title>Soporte</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -74,117 +75,99 @@
 
             </div>
     </nav>  <!--Fin del menú-->
-
-    <header class="contenedor">
-        <div class="header__flex">
+    
+    <header class="header">
+        <div class="header__contenedor">
             <div class="header__imagen">
-                <img src="img/header.webp" class="img" alt="Imagen header">
+                <img src="img/contacto-soporte.jpg" class="header__img" alt="">
             </div>
-
-            <div class="header__texto">
-                <h1 class="header__titulo">En Digital Plus encontraras todo lo que necesitas sobre tecnología: componentes de última generación, servicios personalizados y la mejor guía para potenciar tu mundo digital.</h1>
+            <div class="header__contenedor__informacion">
+                <div class="header__informacion">
+                    <h2 class="header__titulo-contacto">¿Tienes alguna pregunta?</h2>
+                    <p class="header__texto">En Digital Plus, estamos aquí para escucharte. Ya sea que necesites solicitar un servicio, tengas comentarios o preguntas, nuestro equipo está listo para ayudarte. </p>
+                </div>
             </div>
         </div>
-    </header> <!--Fin del header-->
+    </header>
 
-    <main class="bento__contenedor">
-        <div class="bento__productos">
-            <div class="bento__informacion">
-                <h1 class="titulo">Servicios Digital Plus</h1>
-                <p class="bento__texto">Tu puente hacia el futuro digital, con productos y servicios tecnológicos de alta calidad: Digital Plus.</p>
-                <button class="bento__badge">Leer más</button>
-            </div> <!-- Fin de div bento__informacion-->
+    <main class="contacto__contenedor">
+        <div class="contacto__fondo">
+            <div class="contacto__informacion">
+                <div class="contacto__icono">
+                    <h2 class="contacto__titulo">Información</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.93 20q-2.528 0-5.184-1.266t-4.944-3.555q-2.27-2.288-3.536-4.935T4 5.07q0-.45.3-.76T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.31.75t-.76.3"/></svg>
+                </div>
     
-            <div class="bento__grid">
-                <section class="bento__card ecommerse">
-                    <h3 class="bento__titulo">Tienda en linea</h3>
-                    <p class="bento__parrafo">Compra los mejores componentes y accesorios tecnológicos desde la comodidad de tu hogar con nuestra tienda en línea</p>
-                    <div class="bento__img">
-                        <img src="img/ecommerse.png" class="img" alt="Foto de tienda en linea">
+                <div class="contacto__datos">
+                    <div class="contacto__correo">
+                        <p class="contacto__texto"><span class="contacto__resaltar">Correo eléctronico:</span> contacto@digitalplus.com</p>
                     </div>
+    
+                    <div class="contacto__direccion">
+                        <p class="contacto__texto"><span class="contacto__resaltar">Direccion:</span> Calle Principal #123, Ciudad, País.</p>
+                    </div>
+    
+                    <div class="contacto__telefeno">
+                        <p class="contacto__texto"><span class="contacto__resaltar">Telefono:</span> +123 456 7890</p>
+                    </div>
+    
+                    <div class="contacto__telefeno">
+                        <h3 class="contacto__subtitulo">Redes sociales</h3>
+                        <p class="contacto__texto"> <span class="contacto__resaltar">Facebook:</span> facebook.com/digitalplus</p>
+                        <p class="contacto__texto"> <span class="contacto__resaltar">Twitter:</span> @digitalplus</p>
+                        <p class="contacto__texto"> <span class="contacto__resaltar">Linkedin:</span> linkedin.com/company/digitalplus</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contacto__formulario">
+                <div class="formulario__informacion">
+                    <h2 class="contacto__titulo">Contactanos</h2>
+                    <p class="contacto__texto">Sientete libre de contatarnos, usando el formulario siguiente. Nos comunicaremos con usted en poco tiempo</p>
+                    <form action="" class="formulario">
+                        <div class="contacto__campo">
+                            <label for="asunto" class="label__contacto">Asunto:</label>
+                            <select name="asunto" class="contacto__asunto" id="asunto">
+                                <option value="">-- Asunto --</option>
+                                <option value="">Consulta general</option>
+                                <option value="">Soporte Técnico</option>
+                                <option value="">Informacion sobre servicios</option>
+                                <option value="">Facturación</option>
+                                <option value="">Sugerencias o Feedback</option>
+                            </select>
+                        </div>
+    
+                        <div class="contacto__campo">
+                            <label for="nombre" class="label__contacto">Ingrese su nombre completo:</label>
+                            <input type="text" class="contacto__nombre" name="nombre" placeholder="Tu nombre:">
+                        </div>
+    
+                        <div class="contacto__campo">
+                            <label for="email" class="label__contacto">Ingrese su correo electrónico:</label>
+                            <input type="email" class="contacto__email" name="email" placeholder="Tu email:">
+                        </div>
+    
+                        <div class="contacto__campo">
+                            <label for="mensaje" class="label__contacto">Ingrese un comentario:</label>
+                            <textarea class="contacto__mensaje" name="mensaje" placeholder="Ingrese un mensaje:"></textarea>
+                        </div>
+    
+                        <div class="contacto__campo">
+                            <label for="fecha" class="label__contacto">Fecha de contacto:</label>
+                            <input type="date" class="contacto__fecha" name="fecha" placeholder="Selecione una fecha específica de contacto:">
+                        </div>
+                            <button class="soporte__btn" href="soporte.html">Contactar a soporte</button>
+                        <div class="contacto__campo">
 
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card blog">
-                    <h3 class="bento__titulo">Blog de tecnología</h3>
-                    <p class="bento__parrafo">Últimas noticias y desarrollos en la industria de hardware y software.</p>
-                    <div class="bento__img">
-                        <img src="img/Blog.png" class="img" alt="Foto de blog de tecnología">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card tecnico">
-                    <h3 class="bento__titulo">Servicios técnicos</h3>
-                    <p class="bento__parrafo">Ensamblaje de PCs para gaming, trabajo creativo o uso general.</p>
-                    <div class="bento__img">
-                        <img src="img/Servicios.png" class="img" alt="Foto de Servicios">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card capacitacion">
-                    <h3 class="bento__titulo">Capacitación y aprendizaje</h3>
-                    <p class="bento__parrafo">aprender a ensamblar y reparar computadoras.</p>
-                    <div class="bento__img">
-                        <img src="img/capacitacion.png" class="img" alt="Foto de capacitacion">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card consultoria">
-                    <h3 class="bento__titulo">Servicios de consultoría</h3>
-                    <p class="bento__parrafo">Asesoramiento en la compra de equipos tecnológicos.</p>
-                    <div class="bento__img">
-                        <img src="img/consultoria.png" class="img" alt="Foto de consultoria">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card mantenimiento">
-                    <h3 class="bento__titulo">Mantenimiento de equipos</h3>
-                    <p class="bento__parrafo">Ofrecer servicios especializados en la mejora y optimización de PCs y consolas de videojuegos, desde la actualización de componentes hasta la mejora del rendimiento.</p>
-                    <div class="bento__img">
-                        <img src="img/mantenimiento.png" class="img" alt="Foto matenimiento">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card automatizacion">
-                    <h3 class="bento__titulo">Automatización de procesos </h3>
-                    <p class="bento__parrafo">Implementación de soluciones de software que ayuden a automatizar tareas repetitivas</p>
-                    <div class="bento__img">
-                        <img src="img/automatizacion.png" class="img" alt="Foto automatización">
-                    </div>
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-    
-                <section class="bento__card desarrollo">
-                    <h3 class="bento__titulo">Desarrollo de sitios web</h3>
-                    <p class="bento__parrafo">Nos encargamos de crear y mantener sitios web personalizados, incluyendo tiendas en línea (e-commerce), o landing page</p>
-                    <div class="bento__img">
-                        <img src="img/desarrollo.webp" class="img" alt="Foto de desarrollo">
-                    </div>
-                    
-                    <a class="bento__btn" href="#">Ver más</a>
-                </section>
-            </div> <!-- Fin de div bento__grid-->
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+        
     </main>
 
-    <section class="soporte">
-        <div class="soporte__informacion">
-            <h2 class="soporte__titulo">Soporte a la Medida de Tus Necesidades</h2>
-            <p class="soporte__texto">Sabemos que cada negocio es único, por eso en Digital Plus adaptamos nuestro soporte técnico a tus necesidades específicas. Ya sea una consulta rápida o una solución compleja, nuestro equipo de especialistas está listo para brindarte la asistencia que necesitas, cuando la necesitas.</p>
-            <a class="soporte__btn" href="soporte.html">Contactar a soporte</a>
-            
-        </div>
-
-        <div class="soporte__imagen">
-            <img src="img/soporte tecnico.webp" class="img" alt="Imagen de soporte tecnico">
-        </div>
-    </section>
     <script src="app.js"></script>
+    <script src="contacto.js"></script>
 </body>
 </html>
