@@ -100,3 +100,5 @@ function cerrarMenu(){
     navegacionTitulo.classList.add("oculto")
     redesSociales.classList.add("oculto")
 }
+
+

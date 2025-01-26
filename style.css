@@ -678,20 +678,13 @@ a{
 
 @media (min-width: 768px) {
     .compras__contenedor{
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-    
     }
 }
 
 @media (min-width: 980px) {
     .compras__contenedor{
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        place-items: center;
     
     }
 }
@@ -761,5 +754,217 @@ img{
 }
 
 .compras__resaltar{
+    font-weight: 900;
+}
+
+/** PROMESAS  */
+    .garantias{
+        padding: 2rem;
+}
+
+.garantia__titulo{
+    text-align: center;
+}
+
+
+.garantias__flex{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .garantias__flex{
+        display: flex;
+    }
+}
+
+.garantia__card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.garantia__texto{
+    text-align: center;
+}
+
+.garantia__icono{
+    width: 5rem;
+}
+
+/** Testimonios  */
+.testimonios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    background-color: var(--bg-secundario);
+    color: var(--blanco);
+}
+
+.testimonios__flex{
+    width: 90%;
+    height: 850px;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .testimonios__flex{
+        width: 90%;
+        height: 700px;
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+}
+
+.testimonios__card {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    visibility: hidden; /* Ocultar inicialmente */
+    opacity: 0; /* Transparente por defecto */
+    transition: opacity 0.5s ease; /* Transición suave para aparecer/desaparecer */
+}
+
+@media (min-width: 768px) {
+    .testimonios__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        visibility: hidden; /* Ocultar inicialmente */
+        opacity: 0; /* Transparente por defecto */
+        transition: opacity 0.5s ease; /* Transición suave para aparecer/desaparecer */
+        height: 100%;
+    }
+    
+}
+
+.testimonios__card:nth-child(1) {
+    visibility: visible; /* Mostrar la primera tarjeta por defecto */
+    opacity: 1; /* Totalmente visible */
+}
+.testimonios__img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(221, 221, 221, 0.56) 0px 22px 70px 4px;
+}
+
+@media (min-width: 768px) {
+    .testimonios__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+}
+
+@media (min-width: 980px) {
+    .testimonios__img{
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+}
+
+.testimonio__imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .testimonio__imagen{
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.testimonio__informacion{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .testimonio__informacion{
+        width: 50%;
+    }
+    
+}
+
+.testimonios__btns{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem 0;
+}
+
+.testimonios__texto{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonio__nombre{
+    text-align: center;
+}
+
+.testimonio__siguiente,
+.testimonio__anterior{
+    cursor: pointer;
+    border: none;
+    width: 5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: var(--bg-primario);
+    transition: all .4s;
+    border-radius:5px;
+}
+
+.testimonio__siguiente:hover,
+.testimonio__anterior:hover{
+    background-color: var(--bg-primario-hover);
+    transform: scale(1.3);
+}
+
+.resaltar{
+    font-style: italic;
     font-weight: 900;
 }
