@@ -933,7 +933,7 @@ img{
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin: 2rem 0;
+    margin:  0 0 5rem 0;
 }
 
 .testimonios__texto{
@@ -967,4 +967,111 @@ img{
 .resaltar{
     font-style: italic;
     font-weight: 900;
+}
+
+.testimonios__titulo{
+    margin: 5rem 0 0 0;
+    font-weight: 900;
+}
+
+/** FOOTER  */
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.footer__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .footer__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5rem;
+    }
+    
+}
+
+@media (min-width: 980px) {
+    .footer__contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 5rem;
+    }
+    
+}
+
+
+.footer__card{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--negro);
+    border-bottom: 1px solid var(--negro);
+}
+
+.footer__enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 50%;
+}
+
+.footer__enlace:hover{
+    font-weight: 7;
+}
+
+.footer__suscribir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__input{
+    border: none;
+    outline: none;
+    width: 25rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.footer__btn{
+    padding: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: var(--bg-primario);
+    transition: all .4s;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.footer__btn:hover{
+    background-color: var(--bg-primario-hover)
+}
+
+.footer__informacion{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
 }
