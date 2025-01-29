@@ -812,7 +812,7 @@ img{
 
 .testimonios__flex{
     width: 90%;
-    height: 850px;
+    height: 900px;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
@@ -823,7 +823,7 @@ img{
 @media (min-width: 768px) {
     .testimonios__flex{
         width: 90%;
-        height: 700px;
+        height: 600px;
         position: relative;
         border-radius: 1rem;
         overflow: hidden;
@@ -1022,12 +1022,6 @@ img{
     border-bottom: 1px solid var(--negro);
 }
 
-.footer__enlaces{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    height: 50%;
-}
 
 .footer__enlace:hover{
     font-weight: 7;
@@ -1074,4 +1068,57 @@ img{
     gap: 2rem;
     align-items: center;
     justify-content: space-around;
+}
+
+.error{
+    background-color: red;
+    padding: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.valido{
+    background-color: var(--bg-fondo);
+    padding: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.footer__link{
+    position: relative;
+    transition: all .3s;
+}
+
+.footer__link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    transition: all .3s;
+}
+
+.footer__link:hover::after{
+    content: "";
+    width: 100%;
+    background-color: var(--negro);
+}
+
+.footer__link:hover{
+    font-weight: 800;
+}
+
+.footer__enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    gap: 2rem;
 }

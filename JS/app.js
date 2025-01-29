@@ -16,6 +16,7 @@ const navegacionTitulo = document.querySelector(".navegacion__titulo-menu");
 const redesSociales = document.querySelector(".navegacion__redes");
 
 
+
 //* Eventos
 iconoBuscar.addEventListener("click", () =>{
     abrirMenuBusqueda();
