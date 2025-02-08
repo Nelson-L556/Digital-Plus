@@ -6,6 +6,7 @@
     <title>Digital Plus</title>
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/ecommerse.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -75,17 +76,87 @@
             </div>
     </nav>  <!--Fin del menú-->
 
-    <header class="contenedor">
-        <div class="header__flex">
-            <div class="header__imagen">
-                <img src="../img/header.webp" class="img" alt="Imagen header">
+    <header class="ecommerse">
+        <div class="ecommerse__contenedor">
+            <div class="ecommerse__header">
+                <img src="../img/header-ecommerse1.jpg" class="ecommerse__img" alt="imagen de noticias">
+                <div class="ecommerse__informacion">
+                    <h2 class="ecommerse__subtitulo">pc de alto rendimiento</h2>
+                    <button class="ecommerse__btn">Compralas aquí!</button>
+                </div>
             </div>
 
-            <div class="header__texto">
-                <h1 class="header__titulo">En Digital Plus encontraras todo lo que necesitas sobre tecnología: componentes de última generación, servicios personalizados y la mejor guía para potenciar tu mundo digital.</h1>
+
+            <div class="ecommerse__header">
+                <img src="../img/componentes.webp" class="ecommerse__img" alt="imagen de noticias">
+                <div class="ecommerse__informacion">
+                    <h2 class="ecommerse__subtitulo">Los mejores componentes</h2>
+                    <button class="ecommerse__btn">Ver todo ahora!</button>
+                </div>
+            </div>
+
+            
+            <div class="ecommerse__header">
+                <img src="../img/perifericos.webp" class="ecommerse__img" alt="imagen de noticias">
+                <div class="ecommerse__informacion">
+                    <h2 class="ecommerse__subtitulo">Perifericos de alta calidad</h2>
+                    <button class="ecommerse__btn">Ver todo ahora!</button>
+                </div>
+            </div>
+
+            <div class="ecommerse__botones">
+                    <button class="ecommerse__anterior"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"/></svg></button>
+                            
+                    <button class="ecommerse__siguiente"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6z"/></svg></button>
             </div>
         </div>
-    </header> <!--Fin del header-->
+    </header>
+    
+    <section class="novedades">
+        <h2 class="novedades__titulo">📢 ¡No te pierdas las últimas novedades de Digital Plus! 🚀</h2>
+        <div class="novedades__grid">
+            <div class="novedades__card grid1">
+                <div class="img__grid1">
+                    <img src="../img/cotizar.jpg" class="novedades__img img__grid1" alt="Imagen de novedades">
+                </div>
+            </div>
+
+
+            <div class="novedades__card grid2">
+                <div class="novedades__imagen">
+                    <img src="../img/perifericos.jpg" class="novedades__img img__grid2" alt="Imagen de novedades">
+                </div>
+            </div>
+
+                <div class="novedades__card grid3">
+                    <div class="novedades__imagen">
+                        <img src="../img/ensamblar.webp" class="novedades__img img__grid3" alt="Imagen de novedades">
+                    </div>
+                </div>
+
+            <div class="novedades__card grid4">
+                <div class="novedades__imagen">
+                    <img src="../img/procesador-bg.webp" class="novedades__img img__grid4" alt="Imagen de novedades">
+                </div>
+                
+                <div class="novedades__informacion">
+                    <p class="novedades__texto">Nuevos procesadores</p>
+                </div>
+            </div>
+
+            <div class="novedades__card grid5">
+                <div class="novedades__imagen">
+                    <img src="../img/grafica-bg.avif" class="novedades__img img__grid5" alt="Imagen de novedades">
+                </div>
+
+                <div class="novedades__informacion">
+                    <p class="novedades__texto">Nuevas tarjetas de video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="../JS/app.js"></script>
+    <script src="../JS/ecommerse.js"></script>
 </body>
 </html>
