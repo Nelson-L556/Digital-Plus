@@ -61,6 +61,7 @@ a{
     height: 7rem;
     position: absolute;
     background-color: var(--bg-primario);
+    z-index: 1;
 }
 
 .navegacion__iconos{

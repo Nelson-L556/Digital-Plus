@@ -14,8 +14,9 @@ const logo = document.querySelector(".navegacion__imagen");
 const iconoCerrarMenu = document.querySelector(".icono__cerrar-menu");
 const navegacionTitulo = document.querySelector(".navegacion__titulo-menu");
 const redesSociales = document.querySelector(".navegacion__redes");
-
-
+const headerContenedor = document.querySelector(".ecommerse__header")
+const siguienteBtn = document.querySelector(".ecommerse__siguiente");
+const anteriorBtn = document.querySelector(".ecommerse__anterior");
 
 //* Eventos
 iconoBuscar.addEventListener("click", () =>{
@@ -86,7 +87,9 @@ function abrirMenu() {
     iconoCerrarMenu.classList.remove("oculto");
     navegacionTitulo.classList.remove("oculto")
     redesSociales.classList.remove("oculto")
-
+    headerContenedor.classList.add("oculto")
+    siguienteBtn.classList.add("oculto")
+    anteriorBtn.classList.add("oculto")
 }
 
 function cerrarMenu(){
@@ -100,6 +103,9 @@ function cerrarMenu(){
     iconoCerrarMenu.classList.add("oculto");
     navegacionTitulo.classList.add("oculto")
     redesSociales.classList.add("oculto")
+    headerContenedor.classList.remove("oculto")
+    siguienteBtn.classList.remove("oculto")
+    anteriorBtn.classList.remove("oculto")
 }
 
 
