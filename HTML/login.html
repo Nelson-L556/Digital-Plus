@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="preconnect" href="../css/https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Iniciar sesión</title>
 </head>
 <body>
-    <nav class="navegacion">
+    <nav class="navegacion absolute">
         <div class="navegacion__iconos ">
             <div class="navegacion__imagen centro">
                 <img class="navegacion__img navegacion__logo-activo" src="../img/logo.png" alt="Imagen logo">
@@ -33,7 +33,7 @@
                     <a href="servicios.html" class="enlace">Servicios</a>
                     <a href="soporte.html" class="enlace">Soporte</a>
                     <a href="ecommerse.html" class="enlace">Ecommerse</a>
-                    <a class="enlace" href="login.html">Iniciar sesión</a>
+                    <a href="login.html" class="enlace">Iniciar sesión</a>
                 </div>
 
                 <div class="navegacion__redes oculto">
@@ -45,8 +45,7 @@
                 </div>
             </div>
 
-            <div class="navegacion__icono">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icono__menu" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+            <div class="navegacion__icono">                <svg xmlns="http://www.w3.org/2000/svg" class="icono__menu" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
     
                 <svg class="icono__carrito" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h11q.425 0 .713.288T19 16t-.288.713T18 17H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H2q-.425 0-.712-.288T1 3t.288-.712T2 2h1.625q.275 0 .525.15t.375.425z"/></svg>
     
@@ -72,102 +71,59 @@
                 <div class="compras">
                     <h2 class="navegacion__titulo-compras">Carrito</h2>
                 </div>
-
             </div>
     </nav>  <!--Fin del menú-->
-    
-    <header class="header">
-        <div class="header__contenedor">
-            <div class="header__imagen">
-                <img src="../img/contacto-soporte.jpg" class="header__img" alt="">
-            </div>
-            <div class="header__contenedor__informacion">
-                <div class="header__informacion">
-                    <h2 class="header__titulo-contacto">¿Tienes alguna pregunta?</h2>
-                    <p class="header__texto">En Digital Plus, estamos aquí para escucharte. Ya sea que necesites solicitar un servicio, tengas comentarios o preguntas, nuestro equipo está listo para ayudarte. </p>
+    <main class="login">
+        <h1 class="login__titulo">Digital Plus</h1>
+        <div class="login__contenedor">
+            <div class="login__side">
+                <div class="login__imagen">
+                    <img src="../img/login.webp" class="login__img" alt="Imagen de login">
+                </div>
+                <div class="login__descripcion">
+                    <h3 class="login__subtitulo">Bienvenido a nuestra página</h3>
+                    <p class="login__texto">Inicia sesión para acceder a todas las herramientas y recursos que te ayudarán a potenciar tu experiencia digital. Gestiona tu cuenta, accede a contenido exclusivo y mantente conectado con la innovación. ¡Empieza ahora!</p>
                 </div>
             </div>
-        </div>
-    </header>
 
-    <main class="contacto__contenedor">
-        <div class="contacto__fondo">
-            <div class="contacto__informacion">
-                <div class="contacto__icono">
-                    <h2 class="contacto__titulo">Información</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.93 20q-2.528 0-5.184-1.266t-4.944-3.555q-2.27-2.288-3.536-4.935T4 5.07q0-.45.3-.76T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.31.75t-.76.3"/></svg>
-                </div>
-    
-                <div class="contacto__datos">
-                    <div class="contacto__correo">
-                        <p class="contacto__texto"><span class="contacto__resaltar">Correo eléctronico:</span> contacto@digitalplus.com</p>
+            <div class="login__info">
+                <form action="" class="login__form">
+                    <h2 class="login__subtitulo">Inicia sesión</h2>
+                    <div class="login__campo">
+                        <label class="login__label" for="email">Email</label>
+                        <input type="email" class="login__input login__email" name="" id="email">
                     </div>
     
-                    <div class="contacto__direccion">
-                        <p class="contacto__texto"><span class="contacto__resaltar">Direccion:</span> Calle Principal #123, Ciudad, País.</p>
+                    <div class="login__campo">
+                        <label class="login__label" for="contraseña">Contraseña</label>
+                        <input type="password" class="login__input login__password" name="" id="contraseña">
                     </div>
     
-                    <div class="contacto__telefeno">
-                        <p class="contacto__texto"><span class="contacto__resaltar">Telefono:</span> +123 456 7890</p>
-                    </div>
-    
-                    <div class="contacto__telefeno">
-                        <h3 class="contacto__subtitulo">Redes sociales</h3>
-                        <p class="contacto__texto"> <span class="contacto__resaltar">Facebook:</span> facebook.com/digitalplus</p>
-                        <p class="contacto__texto"> <span class="contacto__resaltar">Twitter:</span> @digitalplus</p>
-                        <p class="contacto__texto"> <span class="contacto__resaltar">Linkedin:</span> linkedin.com/company/digitalplus</p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="contacto__formulario">
-                <div class="formulario__informacion">
-                    <h2 class="contacto__titulo">Contactanos</h2>
-                    <p class="contacto__texto">Sientete libre de contatarnos, usando el formulario siguiente. Nos comunicaremos con usted en poco tiempo</p>
-                    <form action="" class="formulario">
-                        <div class="contacto__campo">
-                            <label for="asunto" class="label__contacto">Asunto:</label>
-                            <select name="asunto" class="contacto__asunto" id="asunto">
-                                <option value="">-- Asunto --</option>
-                                <option value="">Consulta general</option>
-                                <option value="">Soporte Técnico</option>
-                                <option value="">Informacion sobre servicios</option>
-                                <option value="">Facturación</option>
-                                <option value="">Sugerencias o Feedback</option>
-                            </select>
+                    <div class="login__opciones">
+                        <div class="login__check">
+                            <label class="login__option" for="recordar">Recordar usuario</label>
+                            <input type="checkbox" class="login__recordar" name="" id="recordar">
                         </div>
     
-                        <div class="contacto__campo">
-                            <label for="nombre" class="label__contacto">Ingrese su nombre completo:</label>
-                            <input type="text" class="contacto__nombre" name="nombre" placeholder="Tu nombre:">
+                        <div class="login__btn">
+                            <button class="btn">Iniciar Sesión</button>
                         </div>
-    
-                        <div class="contacto__campo">
-                            <label for="email" class="label__contacto">Ingrese su correo electrónico:</label>
-                            <input type="email" class="contacto__email" name="email" placeholder="Tu email:">
-                        </div>
-    
-                        <div class="contacto__campo">
-                            <label for="mensaje" class="label__contacto">Ingrese un comentario:</label>
-                            <textarea class="contacto__mensaje" name="mensaje" placeholder="Ingrese un mensaje:"></textarea>
-                        </div>
-    
-                        <div class="contacto__campo">
-                            <label for="fecha" class="label__contacto">Fecha de contacto:</label>
-                            <input type="date" class="contacto__fecha" name="fecha" placeholder="Selecione una fecha específica de contacto:">
-                        </div>
-                            <button class="soporte__btn" href="soporte.html">Contactar a soporte</button>
-                        <div class="contacto__campo">
 
+                        <div class="login__alerta">
+                            
                         </div>
-                    </form>
-                </div>
+    
+                        <div class="login__btns">
+                            <p><a href="#" class="login__enlace">He olvidade mi contraseña</a></p>
+                            <p><a href="#" class="login__enlace">¿No tienes cuenta en Digital Plus? Registrate</a></p>
+                        </div>
+                    </div>
             </div>
+            </form>
         </div>
-        
     </main>
 
     <script src="../JS/app.js"></script>
-    <script src="../JS/contacto.js"></script>
+    <script src="../JS/login.js"></script>
 </body>
 </html>

@@ -478,3 +478,8 @@
     position: absolute;
     top: -.6rem;
 }
+
+.producto__img{
+    width: 50%;
+    height: 100%;
+}
