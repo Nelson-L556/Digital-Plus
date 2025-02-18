@@ -207,12 +207,13 @@
 .btn{
     width: 90%;
     border: none;
-    background-color: var(--btn-color);
+    background-color: var(--bg-primario);
     padding: 1rem;
     border-radius: .5rem;
     cursor: pointer;
     transition: all .4s;
     margin: 0 auto;
+    font-weight: 800;
 }
 
 .login__btn{
@@ -221,14 +222,13 @@
 
 @media (min-width: 768px) {
     .login__btn{
-        width: 90%;
+        width: 100%;
     }
 }
 @media (min-width: 768px) {
     .btn{
         width: 100%;
         border: none;
-        background-color: var(--btn-color);
         padding: 1rem;
         border-radius: .5rem;
         cursor: pointer;
@@ -237,7 +237,7 @@
 }
 
 .btn:hover{
-    background-color: #42976f;
+    background-color: var(--bg-primario-hover);
     transform: scale(1.1);
     transition: all .4s;
 }
