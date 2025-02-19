@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.form{
-    width: 100rem;
-}
-
 .login{
     padding: 2rem;
     width: 100%;
@@ -14,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 15rem;
 }
 
 @media (min-width: 768px) {
@@ -24,7 +21,8 @@
 
 @media (max-width: 399px) {
     .login{
-        margin-top: 25px;
+        margin-top: 15rem;
+
     }
 }
 

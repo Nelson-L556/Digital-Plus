@@ -31,10 +31,10 @@ boton.addEventListener("click", (e) =>{
 
 function validarInformacion(){
     const valorEmail = email.value;
-
+    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para correos válidos
     const valorPassword = password.value
 
-    if(valorEmail == "" || valorPassword == ""){
+    if(!regexCorreo.test(valorEmail) || valorPassword == ""){
         const alertaError = document.createElement("p")
         alertaError.classList.add("error");
         alertaError.textContent = ("Introduzca todos los campos correctamente")
