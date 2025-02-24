@@ -5,27 +5,11 @@
 .login{
     padding: 2rem;
     width: 100%;
-    height: calc(100vh - 7rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15rem;
 }
-
-@media (min-width: 768px) {
-    .login{
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 399px) {
-    .login{
-        margin-top: 15rem;
-
-    }
-}
-
 
 .login__contenedor{
     background-color: var(--blanco);
@@ -38,24 +22,17 @@
     box-shadow: 1px 1px 15px 10px #ddd;
 }
 
-@media (width <= 320px ) {
-    .login__contenedor{
-    margin-top: 25rem;
-    }
-    
-}
-
-@media (width > 767px ) {
+@media (width > 768px ) {
     .login__contenedor{
         background-color: var(--blanco);
         width: 90%;
         max-width: 130rem;
-        height: 60%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     
 }
+
 
 .login__campo{
     width: 90%;
